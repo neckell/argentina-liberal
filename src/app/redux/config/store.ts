@@ -1,17 +1,15 @@
 import { Action, configureStore, ThunkAction } from "@reduxjs/toolkit"
 
-import { baseApi } from "../../services/baseApi"
-import counterReducer from "../reducers/counterSlice"
-
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
-    [baseApi.reducerPath]: baseApi.reducer,
+    // [dataApi.reducerPath]: dataApi.reducer,
   },
   // Adding the api middleware enables caching, invalidation, polling,
   // and other useful features of `rtk-query`.
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(baseApi.middleware),
+  // middleware: (getDefaultMiddleware) =>
+  //   getDefaultMiddleware()
+  //     .concat(determinationApi.middleware)
+  //     .concat(dataApi.middleware),
 })
 
 // optional, but required for refetchOnFocus/refetchOnReconnect behaviors

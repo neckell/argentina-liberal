@@ -1,4 +1,5 @@
-export const Paths = {
+const Paths = {
   home: "/",
-  counter: "/counter",
 }
+
+export default Paths
