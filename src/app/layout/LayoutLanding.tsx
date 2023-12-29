@@ -6,10 +6,12 @@ import HeaderLanding from "./HeaderLanding"
 
 const LayoutLanding = () => {
   return (
-    <div className="flex flex-col">
-      <HeaderLanding />
-      <Outlet />
-      <Footer />
+    <div className="h-screen w-screen">
+      <div className="w-full h-full flex flex-col">
+        <HeaderLanding />
+        <Outlet />
+        <Footer />
+      </div>
     </div>
   )
 }

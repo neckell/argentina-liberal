@@ -11,7 +11,7 @@ import React from "react"
 import logo from "./../assets/images/logo.png"
 
 const Footer: React.FC = () => (
-  <div className="w-full h-full">
+  <div className="w-full">
     <footer className="w-full h-full flex justify-between items-center bg-ct-trademark-dark text-white p-4">
       <div className="flex items-center">
         <img
